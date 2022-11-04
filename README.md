@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калькулятор</title>
+   </head>
+<body>
+     <H1 ALIGN=LEFT><big>Калькулятор Зозулюк</H1>
+  
+            <form name="formcalc1">
+      <input type ="text" name ="txta"> +
+      <input type ="text" name ="txtb"> =
+      <input type ="text" name ="txtres"> 
+        <input type ="button" value ="Результат"  onClick="sumValues()"> 
+   </form>
+
+   <script type="text/javascript">
+
+
+      function sumValues()
+      {
+         var a,b,res;
+         a=Number(document.formcalc1.txta.value);
+         b=Number(document.formcalc1.txtb.value);
+         res=a+b;
+         document.formcalc1.txtres.value=res;
+      }
+   </script>
+
+
+   <form name="formcalc2">
+      <input type ="text" name ="txta"> -
+      <input type ="text" name ="txtb"> =
+      <input type ="text" name ="txtres"> 
+        <input type ="button" value ="Результат" onClick="minValues()"> 
+   </form>
+   <script type="text/javascript">
+
+      function minValues()
+      {
+         var a,a,res;
+         a=Number(document.formcalc2.txta.value);
+         b=Number(document.formcalc2.txtb.value);
+         res=a-b;
+         document.formcalc2.txtres.value=res;
+      }
+   </script>
+
+
+      <form name="formcalc3">
+      <input type ="text" name ="txta"> *
+      <input type ="text" name ="txtb"> =
+      <input type ="text" name ="txtres"> 
+        <input type ="button" value ="Результат" onClick="multiplicationValues()"> 
+   </form>
+   <script type="text/javascript">
+
+      function multiplicationValues()
+      {
+         var a,a,res;
+         a=Number(document.formcalc3.txta.value);
+         b=Number(document.formcalc3.txtb.value);
+         res=a*b;
+         document.formcalc3.txtres.value=res;
+      }
+   </script>
+
+   <form name="formcalc4">
+      <input type ="text" name ="txta"> /
+      <input type ="text" name ="txtb"> =
+      <input type ="text" name ="txtres"> 
+        <input type ="button" value ="Результат" onClick="divisionValues()"> 
+   </form>
+   <script type="text/javascript">
+
+      function divisionValues()
+      {
+         var a,a,res;
+         a=Number(document.formcalc4.txta.value);
+         b=Number(document.formcalc4.txtb.value);
+         res=a/b;
+         document.formcalc4.txtres.value=res;
+      }
+   </script>
+
+   <form name="formcalc5">
+      <input type ="text" name ="txta"> ^
+      <input type ="text" name ="txtb"> =
+      <input type ="text" name ="txtres"> 
+        <input type ="button" value ="Результат" onClick="degreeValues()"> 
+   </form>
+   <script type="text/javascript">
+
+      function degreeValues()
+      {
+         var a,a,res;
+
+         a=Number(document.formcalc5.txta.value);
+         b=Number(document.formcalc5.txtb.value);
+         res=Math.pow (a,b);
+         document.formcalc5.txtres.value=res;
+      }
+   </script>
+
+ 
+
+</body>
+</html>   
